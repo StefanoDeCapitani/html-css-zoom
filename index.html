@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Fontawesome connection -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="page_container">
       <div class="video_section">
-        <div>
-          <button><span>Speaker View</span></button>
-          <button></button>
+        <div class="view_btn_container">
+          <button><i class="fas fa-th"></i> <span>Speaker View</span></button>
+          <button><i class="fas fa-expand-arrows-alt"></i></button>
         </div>
-        <div class="pagination_btn"></div>
-        <div class="pagination_btn"></div>
-        <div>
-          <div class="participant_video_container">
-            <figure>
-              <img src="" alt="" class="participant_video" />
-              <figcaption>Josh Witty</figcaption>
-            </figure>
-          </div>
+        <div class="pagination_btn left">
+          <i class="fas fa-caret-left"></i>
+        </div>
+        <div class="pagination_btn right">
+          <i class="fas fa-caret-right"></i>
+        </div>
+        <div class="participant_video_container">
+          <figure>
+            <img src="" alt="" class="participant_video" />
+            <figcaption>
+              <i class="fas fa-microphone-alt-slash"></i> Josh Witty
+            </figcaption>
+          </figure>
         </div>
       </div>
       <nav>
         <div>
           <ul>
-            <li class="menu_btn"><span>Mute</span></li>
-            <li class="menu_btn"><span>Stop Video</span></li>
+            <li class="menu_btn">
+              <div>
+                <div class="nav_btn_icon">
+                  <i class="fas fa-microphone"></i>
+                </div>
+                <div>Mute</div>
+              </div>
+            </li>
+            <li class="menu_btn">
+              <div>
+                <div class="nav_btn_icon"><i class="fas fa-video"></i></div>
+                <div>Stop Video</div>
+              </div>
+            </li>
           </ul>
         </div>
         <div>
           <ul>
-            <li><span>Invite</span></li>
-            <li class="participant_btn"><span>Manage Participants</span></li>
-            <li class="menu_btn"><span></span>Polling</li>
-            <li><span>Share Screen</span></li>
-            <li><span>Chat</span></li>
-            <li class="record_btn"><span>Record</span></li>
-            <li><span>Breakout Rooms</span></li>
-            <li><span>More</span></li>
+            <li>
+              <div>
+                <div class="nav_btn_icon"><i class="fas fa-user-plus"></i></div>
+                <div>Invite</div>
+              </div>
+            </li>
+            <li class="participant_btn">
+              <div>
+                <div class="nav_btn_icon">
+                  <i class="fas fa-user-friends"></i>
+                </div>
+                <div>Manage Participants</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="nav_btn_icon"><i class="fas fa-poll"></i></div>
+                <div>Polling</div>
+              </div>
+            </li>
+            <li class="menu_btn">
+              <div>
+                <div class="nav_btn_icon">
+                  <i class="fas fa-long-arrow-alt-up"></i>
+                </div>
+                <!-- <i class="fas fa-file-export"></i> -->
+                <div>Share Screen</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="nav_btn_icon">
+                  <i class="fas fa-comment-dots"></i>
+                </div>
+                <div>Chat</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="nav_btn_icon record_btn_chevron">
+                  <i class="far fa-dot-circle"></i>
+                </div>
+                <div>Record</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="nav_btn_icon"><i class="fas fa-th-large"></i></div>
+                <div>Breakout Rooms</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="nav_btn_icon">
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div>More</div>
+              </div>
+            </li>
           </ul>
         </div>
         <div>
