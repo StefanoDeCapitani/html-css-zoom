@@ -48,6 +48,11 @@ button {
     rgba(30, 30, 30, 1) 100%
   );
   color: #dcdcdc;
+  border-radius: 3px;
+}
+
+.view_btn_container button:hover {
+  background: #4b4c4f;
 }
 
 .pagination_btn {
@@ -74,29 +79,17 @@ button {
 }
 
 .participants_section {
-  max-width: 811px;
-  max-height: 456px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.participant_row {
-  max-height: 100%;
+  width: 80%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc(100% / 5);
-  flex-shrink: 1;
-  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .participant_video_container {
-  flex-basis: 320px;
-  max-height: 456px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  width: calc(100% / 5);
+  height: calc(100% / 5);
   overflow: hidden;
   position: relative;
   border: 3px solid #010101;
@@ -108,6 +101,7 @@ button {
 
 .participant_video_container img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -147,15 +141,15 @@ nav li .nav_btn_icon {
 
 .share_screen i {
   position: relative;
-  top: -8px;
+  top: -5px;
   color: #4bc800;
 }
 
 .share_screen::after {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 30px;
+  height: 15px;
+  width: 25px;
   background-color: #4bc800;
   border-radius: 2px;
   bottom: 0;
@@ -172,12 +166,20 @@ nav .end_meeting_btn {
   align-items: center;
 }
 
-.menu_btn::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f077";
+nav li:hover,
+nav .end_meeting_btn:hover {
+  background-color: #4b4c4f;
+}
+
+.menu_btn div:last-child {
+  padding-left: 5px;
+}
+
+.participant_number {
   font-size: 12px;
-  padding: 0 5px;
+  position: relative;
+  bottom: 8px;
+  right: 5px;
 }
 
 .record_btn_chevron::after {
@@ -190,6 +192,5 @@ nav .end_meeting_btn {
 }
 
 .end_meeting_btn {
-  background-color: #4b4c4f;
   color: #fe564c;
 }
